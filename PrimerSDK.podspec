@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
 
     s.default_subspec = "Core"
     s.ios.frameworks  = "Foundation", "UIKit"
+    s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
     s.subspec "Core" do |ss|
         ss.ios.source_files = "Sources/PrimerSDK/Classes/**/*.{h,m,swift}"
